@@ -2,7 +2,7 @@
 
 * Студент: [Шохрух Якубов](https://up.htmlacademy.ru/htmlcss-individual/2/user/2603893).
 * Наставник: [Евгения П.](https://htmlacademy.ru/profile/id2387199).
-
+* Сайт : [Ссылка на мой проект Седона](https://shoha12.github.io/2603893-sedona-2/).
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
