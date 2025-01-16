@@ -5,10 +5,10 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <nav class="navigation">
         <a href="index.html">
-          <img src="#" alt="Город Седона" class="navigation-logo">
+          <img src="images/logo.svg" alt="logo" class="navigation-logo">
         </a>
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -38,16 +38,16 @@
       <button type="button" href="#search" class="header-button">Хочу сюда!</button>
     </header>
 
-    <main class="main-index">
-      <section class="hero">
+    <main class="main-index" data-test="main">
+      <section class="hero" data-test="hero">
         <h1 class="visually-hidden">Седона</h1>
-        <img src="url_to_image.jpg" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!" class="promo-welcome">
+        <img src="images/welcome.svg" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!" class="promo-welcome">
       </section>
       <section class="reasons">
         <h2 class="reasons-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
         <p class="reasons-descr">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
       </section>
-      <section class="advantages">
+      <section class="advantages" data-test="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="advantages-list">
           <li class="advantages-item">
@@ -55,7 +55,7 @@
               <h3 class="advantages-title">Настоящий городок</h3>
               <p class="advantages-descr">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
-            <img src="#" alt="Город Седона">
+            <img src="images/true.jpeg" width="800" height="385" alt="Здание с флагом">
           </li>
           <li class="advantages-item">
             <div class="advantages-block">
@@ -76,7 +76,7 @@
             </div>
           </li>
           <li class="advantages-item">
-            <img src="#" alt="Там есть мост дьявола">
+            <img src="images/devil.jpeg" width="800" height="385" alt="Там есть мост дьявола">
             <div class="advantages-block">
               <h3 class="advantages-title">Там есть мост дьявола</h3>
               <p class="advantages-descr">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
@@ -105,12 +105,12 @@
           </li>
         </ul>
       </section>
-      <section class="interested">
-        <h2 class="interested-title">Заинтересовались?</h2>
-        <p class="interested-descr">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a href="catalog.html" class="interested-button">Поиск гостиниц в Седоне</a>
+      <section class="subscribe" data-test="search">
+        <h2 class="subscribe-title">Заинтересовались?</h2>
+        <p class="subscribe-descr">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <a href="catalog.html" class="subscribe-button">Поиск гостиниц в Седоне</a>
       </section>
-      <section class="newsletter">
+      <section class="newsletter" data-test="subscribe">
         <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
         <p class="newsletter-descr">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -123,7 +123,7 @@
       </section>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer" data-test="footer">
       <section class="footer-social">
         <ul class="social-list">
           <li class="footer-social-item">
@@ -145,10 +145,9 @@
         <address class="contact-adress">
           <a href="tel:88128121212" class="contact-address-phone">+7 (812) 812-12-12</a>
         </address>
-        <h2 class="visually-hidden">Иконка HTML Academy</h2>
-          <a href="https://htmlacademy.ru/intensive/htmlcss">
-            <img src="#" alt="HTML Academy" class="social-html-icon">
-          </a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss">
+          <span class="visually-hidden">Иконка HTML Academy</span>
+        </a>
       </section>
     </footer>
   </body>
