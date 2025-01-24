@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Гостиницы</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <header class="page-header" data-test="header">
@@ -141,7 +142,7 @@
             </ul>
             <ul class="product-list">
                 <li class="product-list-item">
-                    <img src="images/catalog/1.jpeg" width="300" height="212" alt="" class="product-list-image">
+                    <img src="images/catalog/1.jpg" width="300" height="212" alt="" class="product-list-image">
                     <a href="#" class="product-list-link">
                         <h2 class="product-list-title">Amara Resort & Spa</h2>
                     </a>
@@ -181,7 +182,7 @@
                     </div>
                 </li>
                 <li class="product-list-item">
-                    <img src="images/catalog/3.jpeg" alt="" width="300" height="212" class="product-list-image">
+                    <img src="images/catalog/3.jpg" alt="" width="300" height="212" class="product-list-image">
                     <a href="#" class="product-list-link">
                         <h2 class="product-list-title">Desert Quail Inn</h2>
                     </a>
@@ -201,7 +202,7 @@
                     </div>
                 </li>
                 <li class="product-list-item">
-                    <img src="images/catalog/4.jpeg" width="300" height="212" alt="" class="product-list-image">
+                    <img src="images/catalog/4.jpg" width="300" height="212" alt="" class="product-list-image">
                     <a href="#" class="product-list-link">
                         <h2 class="product-list-title">GreenTree Inn</h2>
                     </a>
@@ -242,9 +243,9 @@
             </li>
             </ul>
         </section>
-        <section class="newsletter" data-test="subscribe">
-            <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
-            <p class="newsletter-descr">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <section class="newsletter newsletter-without" data-test="subscribe">
+            <h2 class="newsletter-title newsletter-title-dark">Подпишитесь на рассылку</h2>
+            <p class="newsletter-descr newsletter-descr-dark">Только полезная информация и никакого спама, честное бойскаутское!</p>
             <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
                 <label for="newsletter-email">Email</label>
                 <input class="field" placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email" required>
@@ -277,9 +278,9 @@
             <a href="tel:88128121212" class="contact-address-phone">+7 (812) 812-12-12</a>
           </address>
 
-            <a href="https://htmlacademy.ru/intensive/htmlcss">
-                <span class="visually-hidden">Иконка HTML Academy</span>
-            </a>
+          <a class="autor-logo" href="https://htmlacademy.ru/intensive/htmlcss">
+            <span class="visually-hidden">Иконка HTML Academy</span>
+          </a>
         </section>
       </footer>
 </body>
