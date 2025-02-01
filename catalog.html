@@ -9,7 +9,8 @@
 <body>
     <div class="page-container">
         <header class="page-header" data-test="header">
-            <nav class="navigation">
+            <div class="section-container">
+              <nav class="navigation">
                 <a href="index.html" class="navigation-logo">
                     <img src="images/logo.svg" alt="Седона" >
                 </a>
@@ -39,17 +40,15 @@
                 </ul>
                 <button type="button" class="navigation-user-button">Хочу сюда!</button>
             </nav>
+            </div>
         </header>
 
-        <main class="main-inner" data-test="main">
+        <main class="main-container main-inner" data-test="main">
             <header class="inner-header">
                 <h1 class="inner-header-title">Гостиницы Седоны</h1>
                 <ul class="breadcrumbs">
                     <li class="breadcrumbs-item">
                         <a href="index.html" class="breadcrumbs-link"></a>
-                    </li>
-                    <li class="breadcrumbs-item">
-
                     </li>
                     <li class="breadcrumbs-item">
                         <a class="breadcrumbs-link">Гостиницы</a>
@@ -254,8 +253,10 @@
                 </ul>
             </section>
             <section class="newsletter newsletter-without" data-test="subscribe">
-                <h2 class="newsletter-title newsletter-title-dark">Подпишитесь на рассылку</h2>
-                <p class="newsletter-descr newsletter-descr-dark">Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
+                <div class="section-container">
+                    <h2 class="newsletter-title newsletter-title-dark">Подпишитесь на рассылку</h2>
+                    <p class="newsletter-descr newsletter-descr-dark">Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
+                </div>
                 <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
                     <label class="visually-hidden" for="newsletter-email">Email</label>
                     <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
