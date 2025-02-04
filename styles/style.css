@@ -462,6 +462,9 @@ body {
     position: relative;
     list-style-type: none;
 }
+.breadcrumbs-item {
+  display: inline-block;
+}
 
 .breadcrumbs-item:first-child .breadcrumbs-link {
     display: inline-block;
@@ -630,6 +633,7 @@ div.catalog-filter-group {
 }
 
 .product-list-link {
+    display: inline-block;
     text-decoration: none;
     color: #000;
 }
@@ -641,6 +645,7 @@ div.catalog-filter-group {
 }
 
 .product-list-image {
+  display: block;
     width: 300px;
     min-height: 212px;
 }
