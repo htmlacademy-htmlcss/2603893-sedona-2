@@ -8,40 +8,39 @@
 </head>
 <body>
     <div class="page-container">
-        <header class="page-header" data-test="header">
-            <div class="section-container">
-              <nav class="navigation">
-                <a href="index.html" class="navigation-logo">
-                    <img src="images/logo.svg" alt="Седона" >
-                </a>
-                <ul class="navigation-list">
-                    <li class="navigation-item">
-                        <a href="index.html" class="navigation-link">Главная</a>
-                    </li>
-                    <li class="navigation-item">
-                        <a href="about.html" class="navigation-link">О Седоне</a>
-                    </li>
-                    <li class="navigation-item">
-                        <a href="catalog.html" class="navigation-link navigation-link-current">Гостиницы</a>
-                    </li>
-                </ul>
-                <ul class="navigation-user">
-                    <li class="navigation-user-item">
-                        <a class="navigation-link" href="#">
-                            <span class="visually-hidden">Поиск</span>
-                        </a>
-                    </li>
-                    <li class="navigation-user-item">
-                        <a class="navigation-link" href="#">
-                            <span class="visually-hidden">Избранное</span>
-                            12
-                        </a>
-                    </li>
-                </ul>
-                <button type="button" class="navigation-user-button">Хочу сюда!</button>
+      <header class="page-header" data-test="header">
+        <div class="section-container">
+          <a href="index.html" class="navigation-logo">
+            <img src="images/logo.svg" alt="logo">
+          </a>
+            <nav class="navigation">
+              <ul class="navigation-list">
+                <li class="navigation-item">
+                  <a href="index.html" class="navigation-link navigation-link-current">Главная</a>
+                </li>
+                <li class="navigation-item">
+                  <a href="about.html" class="navigation-link">О Седоне</a>
+                </li>
+                <li class="navigation-item">
+                  <a href="catalog.html" class="navigation-link">Гостиницы</a>
+                </li>
+              </ul>
+              <ul class="navigation-user">
+                <li class="navigation-user-item">
+                  <a class="navigation-user-link-search" href="#">
+                    <span class="visually-hidden">Поиск</span>
+                  </a>
+                </li>
+                <li class="navigation-user-item">
+                  <a class="navigation-user-link-fav" href="#">
+                    <span class="visually-hidden">Избранное</span>
+                  </a>
+                </li>
+                  <button type="button" href="#search" class="navigation-user-button">Хочу сюда!</button>
+              </ul>
             </nav>
-            </div>
-        </header>
+        </div>
+      </header>
 
         <main class="main-container main-inner" data-test="main">
             <header class="inner-header">
@@ -104,16 +103,18 @@
                     </fieldset>
                     <fieldset class="catalog-filter-group">
                         <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-                        <ul class="catalog-filter-list">
+                        <ul class="catalog-filter-list-col">
                             <li class="catalog-filter-item">
                                 <label class="input-label">
                                     <input class="catalog-filter-from" type="text" placeholder="0">
                                     от
                                 </label>
-                                <label class="input-label">
-                                    <input class="catalog-filter-to" type="text" placeholder="9000">
-                                    до
-                                </label>
+                            </li>
+                            <li class="catalog-filter-item">
+                              <label class="input-label">
+                                <input class="catalog-filter-to" type="text" placeholder="9000">
+                                  до
+                              </label>
                             </li>
                         </ul>
                     </fieldset>
@@ -132,18 +133,18 @@
                         <option value="expensive">Самые дорогие</option>
                     </select>
                     <ul class="cards-list">
-                        <li class="cards-list-item">
-                            <a href="#" class="button button-light">
+                        <li class="cards-list-item cards-list-item-current">
+                            <a href="#" class="cards-button">
                                 <span class="visually-hidden">Показать списком</span>
                             </a>
                         </li>
                         <li class="cards-list-item">
-                            <a class="button" href="#">
+                            <a class="cards-button" href="#">
                                 <span class="visually-hidden">Показать карточками</span>
                             </a>
                         </li>
                         <li class="cards-list-item">
-                            <a class="button" href="#">
+                            <a class="cards-button" href="#">
                                 <span class="visually-hidden">Показать плитками</span>
                             </a>
                         </li>
@@ -164,9 +165,9 @@
                             <a href="#" class="product-list-fav">Избранное</a>
                         </div>
                         <div class="product-list-filter">
-                            <p class="product-list-star">
+                            <div class="product-list-star">
                                 <span class="visually-hidden">4 звезды</span>
-                            </p>
+                            </div>
                             <div class="product-list-rating">Рейтинг: 8,5</div>
                         </div>
                     </li>
@@ -267,33 +268,32 @@
             </section>
         </main>
         <footer class="page-footer" data-test="footer">
-            <section class="footer-social">
-              <ul class="social-list">
-                <li class="footer-social-item">
-                  <a href="https://vk.com/htmlacademy" class="footer-social-link">
-                    <span class="visually-hidden">Вконтакте</span>
-                  </a>
-                </li>
-                <li class="footer-social-item">
-                  <a href="https://t.me/htmlacademy" class="footer-social-link">
-                    <span class="visually-hidden">Телеграмм</span>
-                  </a>
-                </li>
-                <li class="footer-social-item">
-                  <a href="https://www.youtube.com/@HTMLAcademyTV" class="footer-social-link">
-                    <span class="visually-hidden">Ютуб</span>
-                  </a>
-                </li>
-              </ul>
-              <address class="contact-adress">
-                <a href="tel:88128121212" class="contact-address-phone">+7 (812) 812-12-12</a>
-              </address>
-
-              <a class="autor-logo" href="https://htmlacademy.ru/intensive/htmlcss">
-                <img src="images/html.svg" alt="Иконка HTML Academy">
-              </a>
-            </section>
-          </footer>
+          <section class="footer-social">
+            <ul class="social-list">
+              <li class="footer-social-item">
+                <a href="https://vk.com/htmlacademy" class="footer-social-link">
+                  <img src="images/vk.svg" alt="Вконтакте">
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a href="https://t.me/htmlacademy" class="footer-social-link">
+                  <img src="images/telegram.svg" alt="Телеграмм">
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a href="https://www.youtube.com/@HTMLAcademyTV" class="footer-social-link">
+                  <img src="images/youtube.svg" alt="Ютуб">
+                </a>
+              </li>
+            </ul>
+            <address class="contact-adress">
+              <a href="tel:88128121212" class="contact-address-phone">+7 (812) 812-12-12</a>
+            </address>
+            <a class="autor-logo" href="https://htmlacademy.ru/intensive/htmlcss">
+              <img src="images/html.svg" alt="Иконка HTML Academy">
+            </a>
+          </section>
+        </footer>
     </div>
 </body>
 </html>
