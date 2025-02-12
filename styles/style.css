@@ -164,7 +164,7 @@ body {
 
 
 .hero {
-    background-image: url("../images/divider.svg"), url("../images/index/main_bg.jpeg");
+    background-image: url("../images/index/divider.svg"), url("../images/index/main_bg.jpeg");
     background-size: 100% auto, cover;
     background-repeat: no-repeat;
     background-position: left bottom, left top;
@@ -368,11 +368,12 @@ body {
     border: none;
     margin-top: 54px;
     cursor: pointer;
+    font-family: inherit;
 }
 
 .newsletter {
     padding: 96px 0;
-    background-image: url("../images/subscribe_bg.jpg");
+    background-image: url("../images/index/subscribe_bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 420px;
@@ -398,6 +399,8 @@ body {
     text-transform: uppercase;
     color: #fff;
     border: none;
+    font-family: inherit;
+
 }
 
 .field {
@@ -407,6 +410,7 @@ body {
     font-family: inherit;
     font-size: 18px;
     line-height: 24px;
+    border-radius: 4px 0 0 4px;
     border: none;
 }
 
@@ -443,19 +447,12 @@ body {
 }
 
 .social-list {
-  max-width: 170px;
+    max-width: 142px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     list-style-type: none;
-}
-
-.footer-social-item {
-  margin-right: 25px;
-}
-
-.footer-social-item:last-child {
-  margin-right: 0;
+    gap: 25px;
 }
 
 .footer-social-link {
