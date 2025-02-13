@@ -61,42 +61,66 @@
                         <ul class="catalog-filter-list">
                             <li class="catalog-filter-item catalog-filter-item-mb">
                                 <label class="control">
-                                    <input type="checkbox" class="control-input" name="pool" checked>
+                                    <input type="checkbox" class="control-input-checkbox" name="pool" checked>
+                                    <div class="custom-checkbox">
+                                      <svg class="checkbox-checkmark" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path d="M15 5.5L8.5 12.9L5.1 9L4 10.2L8.5 15.4L16.2 6.8L15 5.5Z" fill="#3F5E72"/>
+                                        </svg>
+                                    </div>
                                     Бассейн
                                 </label>
                             </li>
                             <li class="catalog-filter-item catalog-filter-item-mb">
                                 <label class="control">
-                                    <input type="checkbox" class="control-input" name="parking" checked>
+                                    <input type="checkbox" class="control-input-checkbox" name="parking" checked>
+                                    <div class="custom-checkbox">
+                                      <svg class="checkbox-checkmark" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path d="M15 5.5L8.5 12.9L5.1 9L4 10.2L8.5 15.4L16.2 6.8L15 5.5Z" fill="#3F5E72"/>
+                                        </svg>
+                                    </div>
                                     Парковка
                                 </label>
                             </li>
                             <li class="catalog-filter-item catalog-filter-item-mb">
                                 <label class="control">
-                                    <input type="checkbox" class="control-input" name="wi-fi">
+                                    <input type="checkbox" class="control-input-checkbox" name="wi-fi">
+                                    <div class="custom-checkbox">
+                                      <svg class="checkbox-checkmark" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path d="M15 5.5L8.5 12.9L5.1 9L4 10.2L8.5 15.4L16.2 6.8L15 5.5Z" fill="#3F5E72"/>
+                                        </svg>
+                                    </div>
                                     Wi-Fi
                                 </label>
                             </li>
                         </ul>
                     </fieldset>
                     <fieldset class="catalog-filter-group">
-                        <legend class="catalog-filter-title">Тип жилья:</legend>
+                        <legend class="catalog-filter-title">Тип Жилья:</legend>
                         <ul class="catalog-filter-list">
                             <li class="catalog-filter-item catalog-filter-item-mb">
                                 <label class="control">
-                                    <input class="control-input" type="radio" name="product-group" value="hotels">
+                                    <input class="control-input-radio" type="radio" name="product-group" value="hotels">
+                                    <div class="custom-radio">
+                                      <span class="radio-checkmark"></span>
+                                    </div>
                                     Гостиница
                                 </label>
                             </li>
                             <li class="catalog-filter-item catalog-filter-item-mb">
                                 <label class="control">
-                                    <input class="control-input" type="radio" name="product-group" value="motels" checked>
+                                    <input class="control-input-radio" type="radio" name="product-group" value="motels" checked>
+                                    <div class="custom-radio">
+                                      <span class="radio-checkmark"></span>
+                                    </div>
                                     Мотель
                                 </label>
                             </li>
                             <li class="catalog-filter-item catalog-filter-item-mb">
                                 <label class="control">
-                                    <input class="control-input" type="radio" name="product-group" value="appartaments">
+                                    <input class="control-input-radio" type="radio" name="product-group" value="appartaments">
+                                    <div class="custom-radio">
+                                      <span class="radio-checkmark"></span>
+                                    </div>
                                     Апартаменты
                                 </label>
                             </li>
@@ -133,9 +157,9 @@
                 <div class="catalog-header">
                     <h2 class="catalog-product-title">Найдено гостиниц: 38</h2>
                     <select class="select-control" aria-label="Сортировка">
-                        <option value="cheap">Самые дешёвые</option>
-                        <option value="popular">Самые популярные</option>
-                        <option value="expensive">Самые дорогие</option>
+                        <option value="cheap">Сначала дешёвые</option>
+                        <option value="popular">Сначала популярные</option>
+                        <option value="expensive">Сначала дорогие</option>
                     </select>
                     <ul class="cards-list">
                         <li class="cards-list-item cards-list-item-current">
@@ -167,7 +191,7 @@
                         </div>
                         <div class="product-list-filter">
                             <a href="#" class="product-list-about">Подробней</a>
-                            <a href="#" class="product-list-fav">Избранное</a>
+                            <a href="#" class="product-list-fav">В Избранное</a>
                         </div>
                         <div class="product-list-filter">
                             <div class="product-list-star">
@@ -187,7 +211,7 @@
                         </div>
                         <div class="product-list-filter">
                             <a href="#" class="product-list-about">Подробней</a>
-                            <a href="#" class="product-list-fav product-list-fav-clicked">Избранном</a>
+                            <a href="#" class="product-list-fav product-list-fav-clicked">В Избранном</a>
                         </div>
                         <div class="product-list-filter">
                             <p class="product-list-star">
@@ -207,7 +231,7 @@
                         </div>
                         <div class="product-list-filter">
                             <a href="#" class="product-list-about">Подробней</a>
-                            <a href="#" class="product-list-fav">Избранное</a>
+                            <a href="#" class="product-list-fav">В Избранное</a>
                         </div>
                         <div class="product-list-filter">
                             <p class="product-list-star">
@@ -227,7 +251,7 @@
                         </div>
                         <div class="product-list-filter">
                             <a href="#" class="product-list-about">Подробней</a>
-                            <a href="#" class="product-list-fav">Избранное</a>
+                            <a href="#" class="product-list-fav">В Избранное</a>
                         </div>
                         <div class="product-list-filter">
                             <p class="product-list-star">
@@ -237,10 +261,6 @@
                         </div>
                     </li>
                 </ul>
-
-                <div class="divider">
-                  <span class="divider-row"></span>
-                </div>
 
                 <ul class="pagination">
                     <li class="pagination-item pagination-item-current">
