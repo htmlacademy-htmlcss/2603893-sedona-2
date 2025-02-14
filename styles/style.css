@@ -538,11 +538,41 @@ body {
     color: #000;
 }
 
+.contact-address-phone:hover {
+  color:  #756157;
+}
+
+.contact-address-phone:focus {
+  color:  #756157;
+}
+
+.contact-address-phone:active {
+  color: rgba(117, 97, 87, 0.30);
+}
+
 
 .autor-logo {
     width: 115px;
     height: 33px;
 }
+
+.html-logo {
+  fill: #000;
+}
+
+.html-logo:hover {
+  fill:#756157;
+}
+
+.html-logo:focus {
+  fill:#756157;
+}
+
+.html-logo:active {
+  fill:#756157;
+  opacity: 0.3
+}
+
 
 /* Catalog */
 
@@ -922,6 +952,32 @@ select {
   list-style-type: none;
 }
 
+.product-list-star {
+  align-self: center;
+  width: 120px;
+  height: 17px;
+}
+
+.product-list-star:before {
+  content: '';
+  height: 17px;
+  display: block;
+  background-image: url('../images/catalog/star.svg');
+  background-repeat: space no-repeat;
+  background-size: contain;
+}
+
+.star-4 {
+  width: 89px;
+}
+
+.star-3 {
+  width: 64px;
+}
+
+.star-2 {
+  width: 42px;
+}
 
 .product-list-item {
     border-radius: 4px;
@@ -1037,11 +1093,30 @@ select {
     padding: 10px;
 }
 
+.pagination-item:hover {
+  background-color: #68A2CA;
+}
 
-.pagination-item-current {
+.pagination-item:focus {
+  background-color: #68A2CA;
+}
+
+.pagination-item:active {
+  background-color: #82B3D3;
+}
+
+
+.pagination-item-current,
+.pagination-item-current:hover,
+.pagination-item-current:focus,
+.pagination-item-current:active {
     background-color: #F2F2F2;
 }
-.pagination-item-dots {
+
+.pagination-item-dots,
+.pagination-item-dots:hover,
+.pagination-item-dots:focus,
+.pagination-item-dots:active {
     background-color: #fff;
 }
 
