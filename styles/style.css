@@ -148,12 +148,8 @@ body {
     height: 2px;
 }
 
-
-
-.navigation-user-button {
-    font-family: inherit;
+.button {
     padding: 8px 34px;
-    background-color: #756157;
     font-size: 16px;
     font-weight: 700;
     line-height: 20px;
@@ -161,6 +157,53 @@ body {
     color: #fff;
     border-radius: 4px;
     border: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.button-brown {
+  background-color: #756157;
+}
+
+.button-brown:hover {
+  background-color: #615048;
+}
+
+.button-brown:focus {
+  background-color: #615048;
+}
+
+.button-brown:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.30);
+}
+
+.button-brown:disabled {
+  background-color: #E5E5E5;
+}
+
+.button-blue {
+  background-color: #82B3D3;
+}
+
+.button-blue:hover {
+  background-color: #68A2CA;
+}
+
+.button-blue:focus {
+  background-color: #68A2CA;
+}
+
+.button-blue:active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.30);
+}
+
+.button-blue:disabled {
+  background-color: #E5E5E5;
+}
+
+.navigation-user-button {
     margin-left: 20px;
 }
 
@@ -393,16 +436,8 @@ body {
     padding: 8px 50px;
     margin: 0 auto;
     width: 376px;
-    background-color: #756157;
-    color: #fff;
-    border-radius: 4px;
     font-size: 20px;
-    font-weight: 700;
     line-height: 36px;
-    text-transform: uppercase;
-    border: none;
-    cursor: pointer;
-    font-family: inherit;
 }
 
 .newsletter {
@@ -425,15 +460,8 @@ body {
     width: 232px;
     padding: 8px 50px;
     border-radius: 0 4px 4px 0;
-    background-color:  #82B3D3;
     font-size: 20px;
-    font-weight: 700;
     line-height: 36px;
-    text-transform: uppercase;
-    color: #fff;
-    border: none;
-    font-family: inherit;
-
 }
 
 .field {
@@ -661,6 +689,7 @@ body {
   border-radius: 5px;
   background-color: #fff;
   border: none;
+  cursor: pointer;
 }
 
 .range-button-max {
@@ -697,31 +726,29 @@ body {
 
 .catalog-filter-sub {
     padding: 8px 50px;
-    border-radius: 4px;
-    background-color: #82B3D3;
-    border: none;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 20px;
-    text-transform: uppercase;
-    color: #fff;
-    font-family: inherit;
     margin-bottom: 32px;
 }
 
 .catalog-filter-res {
-    padding: 8px 50px;
-    border-radius: 4px;
+    padding: 8px 57.5px;
     background-color: rgba(0, 0, 0, 0.01);
-    border: none;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 20px;
-    text-transform: uppercase;
-    color: #fff;
-    font-family: inherit;
 }
 
+.catalog-filter-res:hover {
+  opacity: 0.6;
+}
+
+.catalog-filter-res:focus{
+  border: 3px solid #83B3D3;
+}
+
+.catalog-filter-res:active {
+  color: rgba(255, 255, 255, 0.30);
+}
+
+.catalog-filter-res:disabled {
+  opacity: 0.1;
+}
 
 .catalog-filter-title {
     font-size: 20px;
@@ -754,6 +781,7 @@ body {
   height: 20px;
   border-radius: 50%;
   margin-right: 16px;
+  cursor: pointer;
 }
 
 .custom-checkbox {
@@ -770,6 +798,7 @@ body {
   display: none;
   max-width: 100%;
   height: auto;
+  cursor: pointer;
 }
 
 .radio-checkmark {
@@ -820,6 +849,19 @@ select {
     background-position-x: calc(100% - 18px);
     border: 2px solid  #E5E5E5;
     border-radius: 4px;
+    cursor: pointer;
+}
+
+.select-control:hover {
+  border: 2px solid #68A2CA;
+}
+
+.select-control:focus {
+  border: 2px solid #68A2CA;
+}
+
+.select-control:disabled {
+  border: 2px solid  rgba(0, 0, 0, 0.30);
 }
 
 .cards-list {
@@ -849,6 +891,7 @@ select {
   height: 14px;
   background-repeat: no-repeat;
   background-size: cover;
+
 }
 
 .cards-list-item:nth-child(1) .cards-button {
@@ -928,35 +971,36 @@ select {
 
 .product-list-about {
     padding: 8px 26px;
-    border-radius: 4px;
-    background-color: #756157;
-    text-decoration: none;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 20px;
-    text-transform: uppercase;
     text-align: center;
-    color: #fff;
+    text-decoration: none;
 }
 
 .product-list-fav {
     padding: 8px 20px;
-    border-radius: 4px;
-    background-color: #82B3D3;
     text-decoration: none;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 20px;
-    text-transform: uppercase;
     text-align: center;
-    color: #fff;
 }
 
-.product-list-fav-clicked {
+.button-green {
     background-color: #7DB54F;
     padding: 8px 18px;
+}
+
+.button-green:hover {
+  background-color: #6C9E42;
+}
+
+.button-green:focus {
+  background-color: #6C9E42;
+}
+
+.button-green:active {
+  background-color: #7DB54F;
+  color: rgba(255, 255, 255, 0.30);
+}
+
+.button-green:disabled {
+  background-color: #E5E5E5;
 }
 
 .product-list-rating {
