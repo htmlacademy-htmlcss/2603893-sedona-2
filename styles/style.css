@@ -106,12 +106,9 @@ body {
   padding: 22px 12px;
 }
 
-.navigation-item {
-  padding: 20px 16px;
-}
-
 .navigation-link {
     display: inline-block;
+    padding: 20px 16px;
     position: relative;
     color: #000000;
     text-decoration: none;
@@ -122,29 +119,43 @@ body {
 
 .navigation-user-link-search {
   display: inline-block;
-  width: 19px;
-  height: 19px;
+  width: 20px;
+  height: 20px;
   background-image: url('../images/index/search.svg');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .navigation-user-link-fav {
+  position: relative;
   display: inline-block;
-  width: 18px;
-  height: 17px;
+  width: 20px;
+  height: 20px;
   background-image: url('../images/index/heart.svg');
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.fav-number {
+  position: absolute;
+  color: #FFF;
+  text-align: center;
+  font-size: 10px;
+  line-height: 10px;
+  top: -11px;
+  right: -6px;
+  background-color: #7DB54F;
+  padding: 5px 4px;
+  border-radius:50%;
 }
 
 .navigation-link-current:after {
     content: '';
     background-color: #756157;
     position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -21px;
+    left: 16px;
+    right: 16px;
+    bottom: 0;
     height: 2px;
 }
 
@@ -445,7 +456,7 @@ body {
     background-image: url("../images/index/subscribe_bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 420px;
+    min-height: 414px;
 }
 
 
@@ -527,7 +538,7 @@ body {
 .contact-adress {
   max-width: 331px;
   font-size: 40px;
-  line-height: 40px;
+  line-height: 46px;
   font-weight: 400;
   font-style: normal;
 }
@@ -553,7 +564,8 @@ body {
 
 .autor-logo {
     width: 115px;
-    height: 33px;
+    min-height: 34px;
+    align-self: flex-end;
 }
 
 .html-logo {
@@ -663,7 +675,7 @@ body {
 
 .catalog-filter-from {
   max-width: 143px;
-  padding: 12px 20px;
+  padding: 12px 40px 12px 20px;
   border-radius: 4px 0 0 4px;
   background-color:  #F2F2F2;
   border: none;
@@ -675,7 +687,7 @@ body {
 
 .catalog-filter-to {
   max-width: 143px;
-  padding: 12px 20px;
+  padding: 12px 40px 12px 20px;
   border-radius: 0 4px 4px 0;
   background-color:  #F2F2F2;
   border: none;
@@ -740,7 +752,7 @@ body {
 
 .input-label {
   position: absolute;
-  right: 16px;
+  right: 19px;
   top: 50%;
   transform: translateY(-50%);
   opacity: 0.3;
@@ -760,8 +772,9 @@ body {
 }
 
 .catalog-filter-res {
-    padding: 8px 57.5px;
+    padding: 4px 50.5px;
     background-color: rgba(0, 0, 0, 0.01);
+    border: 3px solid transparent;
 }
 
 .catalog-filter-res:hover {
@@ -805,6 +818,9 @@ body {
 
 
 .custom-radio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   background-color: #fff;
   width: 20px;
@@ -815,32 +831,50 @@ body {
 }
 
 .custom-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   background-color: #fff;
   width: 20px;
-  height: 19px;
+  height: 20px;
   border-radius:4px;
   margin-right: 16px;
 }
 
 .checkbox-checkmark {
-  position: absolute;
   display: none;
-  max-width: 100%;
-  height: auto;
+  width: 20px;
+  height: 19px;
   cursor: pointer;
+  background-image: url('../images/catalog/tick.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .radio-checkmark {
-  position: absolute;
-  top: 25%;
-  left: 25%;
   width: 10px;
   border-radius: 50%;
   height: 10px;
   background-color: #333;
   display: none;
 }
+
+.control:hover {
+  opacity: 0.6;
+}
+
+.control:active {
+  opacity: 0.3;
+}
+
+/* .custom-radio:focus {
+  border: 3px solid #83B3D3;
+}
+
+.custom-checkbox:focus {
+  border: 3px solid #83B3D3;
+} */
 
 .control input:checked + .custom-checkbox .checkbox-checkmark {
   display: block;
@@ -905,12 +939,12 @@ select {
 
 .cards-list-item {
   width: 48px;
-  padding: 12px 14px;
   border-radius: 4px;
   border: 2px solid #E5E5E5;
+  padding: 12px 14px;
 }
 
-.cards-list-item-current {
+.cards-list-item:hover {
   border: 2px solid #000;
 }
 
@@ -1013,6 +1047,7 @@ select {
     display: block;
     width: 300px;
     min-height: 212px;
+    object-fit: cover;
 }
 
 .product-list-name {
@@ -1082,35 +1117,38 @@ select {
 }
 
 .pagination-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
     min-width: 60px;
     min-height: 60px;
     border-radius: 4px;
     background-color: #82B3D3;
-    padding: 10px;
 }
 
-.pagination-item:hover {
+.pagination-link:hover {
   background-color: #68A2CA;
 }
 
-.pagination-item:focus {
+.pagination-link:focus {
   background-color: #68A2CA;
 }
 
-.pagination-item:active {
+.pagination-link:active {
   background-color: #82B3D3;
 }
 
+.pagination-link:active .pagination-text {
+  opacity: 0.3;
+}
 
-.pagination-item-current,
-.pagination-item-current:hover,
-.pagination-item-current:focus,
-.pagination-item-current:active {
-    background-color: #F2F2F2;
+
+.pagination-link-current,
+.pagination-link-current:hover,
+.pagination-link-current:focus,
+.pagination-link-current:active {
+    background-color: #f2f2f2;
+}
+
+.pagination-item-dots {
+  padding: 18px 23px;
 }
 
 .pagination-item-dots,
@@ -1121,12 +1159,19 @@ select {
 }
 
 .pagination-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     font-size: 20px;
     font-weight: 700;
     line-height: 36px;
     text-transform: uppercase;
     color: #fff;
     text-decoration: none;
+    padding: 11px 18px;
+    width: 100%;
+    height: 100%;
 }
 
 .pagination-link-current {

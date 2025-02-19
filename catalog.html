@@ -16,13 +16,13 @@
             <nav class="navigation">
               <ul class="navigation-list">
                 <li class="navigation-item">
-                  <a href="index.html" class="navigation-link navigation-link-current">Главная</a>
+                  <a href="index.html" class="navigation-link">Главная</a>
                 </li>
                 <li class="navigation-item">
                   <a href="about.html" class="navigation-link">О Седоне</a>
                 </li>
                 <li class="navigation-item">
-                  <a href="catalog.html" class="navigation-link">Гостиницы</a>
+                  <a href="catalog.html" class="navigation-link navigation-link-current">Гостиницы</a>
                 </li>
               </ul>
               <ul class="navigation-user">
@@ -33,6 +33,7 @@
                 </li>
                 <li class="navigation-user-item">
                   <a class="navigation-user-link-fav" href="#">
+                    <span class="fav-number">12</span>
                     <span class="visually-hidden">Избранное</span>
                   </a>
                 </li>
@@ -62,10 +63,8 @@
                             <li class="catalog-filter-item catalog-filter-item-mb">
                                 <label class="control">
                                     <input type="checkbox" class="control-input-checkbox" name="pool" checked>
-                                    <div class="custom-checkbox">
-                                      <svg class="checkbox-checkmark" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                        <path d="M15 5.5L8.5 12.9L5.1 9L4 10.2L8.5 15.4L16.2 6.8L15 5.5Z" fill="#3F5E72"/>
-                                        </svg>
+                                    <div class="custom-checkbox" tabindex="2">
+                                      <span class="checkbox-checkmark"></span>
                                     </div>
                                     Бассейн
                                 </label>
@@ -73,10 +72,8 @@
                             <li class="catalog-filter-item catalog-filter-item-mb">
                                 <label class="control">
                                     <input type="checkbox" class="control-input-checkbox" name="parking" checked>
-                                    <div class="custom-checkbox">
-                                      <svg class="checkbox-checkmark" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                        <path d="M15 5.5L8.5 12.9L5.1 9L4 10.2L8.5 15.4L16.2 6.8L15 5.5Z" fill="#3F5E72"/>
-                                        </svg>
+                                    <div class="custom-checkbox" tabindex="2">
+                                      <span class="checkbox-checkmark"></span>
                                     </div>
                                     Парковка
                                 </label>
@@ -84,10 +81,8 @@
                             <li class="catalog-filter-item catalog-filter-item-mb">
                                 <label class="control">
                                     <input type="checkbox" class="control-input-checkbox" name="wi-fi">
-                                    <div class="custom-checkbox">
-                                      <svg class="checkbox-checkmark" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                        <path d="M15 5.5L8.5 12.9L5.1 9L4 10.2L8.5 15.4L16.2 6.8L15 5.5Z" fill="#3F5E72"/>
-                                        </svg>
+                                    <div class="custom-checkbox" tabindex="2">
+                                      <span class="checkbox-checkmark"></span>
                                     </div>
                                     Wi-Fi
                                 </label>
@@ -100,7 +95,7 @@
                             <li class="catalog-filter-item catalog-filter-item-mb">
                                 <label class="control">
                                     <input class="control-input-radio" type="radio" name="product-group" value="hotels">
-                                    <div class="custom-radio">
+                                    <div class="custom-radio" tabindex="2">
                                       <span class="radio-checkmark"></span>
                                     </div>
                                     Гостиница
@@ -109,7 +104,7 @@
                             <li class="catalog-filter-item catalog-filter-item-mb">
                                 <label class="control">
                                     <input class="control-input-radio" type="radio" name="product-group" value="motels" checked>
-                                    <div class="custom-radio">
+                                    <div class="custom-radio" tabindex="2">
                                       <span class="radio-checkmark"></span>
                                     </div>
                                     Мотель
@@ -118,7 +113,7 @@
                             <li class="catalog-filter-item catalog-filter-item-mb">
                                 <label class="control">
                                     <input class="control-input-radio" type="radio" name="product-group" value="appartaments">
-                                    <div class="custom-radio">
+                                    <div class="custom-radio" tabindex="2">
                                       <span class="radio-checkmark"></span>
                                     </div>
                                     Апартаменты
@@ -133,13 +128,13 @@
                                 <label for="from" class="input-label">
                                     от
                                 </label>
-                                <input class="catalog-filter-from" type="text" placeholder="0" id="from" name="from">
+                                <input class="catalog-filter-from" type="text" value="0" id="from" name="from">
                             </li>
                             <li class="catalog-filter-item">
                               <label for="to" class="input-label">
                                   до
                               </label>
-                              <input class="catalog-filter-to" type="text" placeholder="9000" id="to" name="to">
+                              <input class="catalog-filter-to" type="text" value="9000" id="to" name="to">
                             </li>
                         </ul>
                         <div class="range">
@@ -264,22 +259,22 @@
 
                 <ul class="pagination">
                     <li class="pagination-item pagination-item-current">
-                        <a class="pagination-link pagination-link-current">1</a>
+                        <a class="pagination-link pagination-link-current"><span class="pagination-text">1</span></a>
                     </li>
                     <li class="pagination-item">
-                        <a class="pagination-link" href="#">2</a>
+                        <a class="pagination-link" href="#"><span class="pagination-text">2</span></a>
                     </li>
                     <li class="pagination-item">
-                        <a class="pagination-link" href="#">3</a>
+                        <a class="pagination-link" href="#"><span class="pagination-text">3</span></a>
                     </li>
                     <li class="pagination-item">
-                        <a class="pagination-link" href="#">4</a>
+                        <a class="pagination-link" href="#"><span class="pagination-text">4</span></a>
                     </li>
                     <li class="pagination-item pagination-item-dots">
                       <span>...</span>
                   </li>
                   <li class="pagination-item">
-                    <a class="pagination-link" href="#">10</a>
+                    <a class="pagination-link" href="#"><span class="pagination-text">10</span></a>
                 </li>
                 </ul>
             </section>
