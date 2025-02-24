@@ -1340,6 +1340,10 @@ select {
   column-gap: 46px;
 }
 
+.modal-container-close {
+  display: none;
+}
+
 .modal-input {
   padding: 12px 20px;
   border-radius: 4px;
@@ -1350,6 +1354,18 @@ select {
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
+  background-image: url('../images/index/date.svg');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-x: calc(100% - 20px);
+}
+
+.modal-input:hover {
+  background-color: #E5E5E5;
+}
+
+.modal-input:focus-visible {
+  outline: 3px solid #83B3D3;
 }
 
 .modal-input-small {
@@ -1361,6 +1377,11 @@ select {
   font-weight: 700;
   line-height: 20px;
   width: 110px;
+  background-image: none;
+}
+
+.modal-input-small:hover {
+  background-color:#F2F2F2;
 }
 
 .button-plus {
@@ -1391,14 +1412,20 @@ select {
 
 .button-modal-search-icon {
   display: flex;
+  fill: rgba(117, 97, 87, 0.30);
 }
 
 .button-modal-search-icon:hover  {
   fill: #000;
 }
 
-.button-modal-search-icon:focus-visible  .button-modal-search-icon {
+.button-modal-search-icon:focus-visible {
   outline: 3px solid  #82B3D3;
+  border-radius: 4px;
+}
+
+.button-modal-search-icon:active {
+  fill: rgba(117, 97, 87, 0.30);
 }
 
 
@@ -1414,6 +1441,18 @@ select {
   font-weight: 700;
   line-height: 24px;
   text-transform: uppercase;
+}
+
+.modal-button:hover {
+  background-color: #68A2CA;
+}
+
+.modal-button:focus-visible {
+  background-color: #68A2CA;
+}
+
+.modal-button:active {
+  color: rgba(255, 255, 255, .3);
 }
 
 .tooltip {
