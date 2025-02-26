@@ -57,6 +57,7 @@ body {
     width: 1200px;
     margin: 0 auto;
     background-color: #fff;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.20);
 }
 
 .main-index {
@@ -830,6 +831,7 @@ body {
 
 .catalog-filter-res:focus-visible{
   border: 3px solid #83B3D3;
+  outline: none;
 }
 
 .catalog-filter-res:active {
@@ -985,10 +987,13 @@ select {
   outline: 2px solid #82B3D3;
 }
 
+.cards-button:active {
+  border: 2px solid #000;
+}
+
 .cards-list-item {
   display: flex;
 }
-
 
 .cards-button {
   display: inline-block;
@@ -1240,8 +1245,6 @@ select {
     color: #333;
 }
 
-
-
 .modal-container {
   position: fixed;
   height: 100%;
@@ -1251,6 +1254,11 @@ select {
   left: 0;
   background-color: rgba(242, 242, 242, 0.80);
 }
+
+.modal-container-close {
+  display: none;
+}
+
 
 .modal {
   width: 717px;
@@ -1295,6 +1303,7 @@ select {
 
 .modal-title {
   display: inline-block;
+  max-width: 415px;
   color: #000;
   font-size: 30px;
   font-weight: 700;
@@ -1340,9 +1349,6 @@ select {
   column-gap: 46px;
 }
 
-.modal-container-close {
-  display: none;
-}
 
 .modal-input {
   padding: 12px 20px;
@@ -1377,6 +1383,7 @@ select {
   font-weight: 700;
   line-height: 20px;
   width: 110px;
+  min-height: 48px;
   background-image: none;
 }
 
@@ -1386,12 +1393,12 @@ select {
 
 .button-plus {
   right: 14px;
-  top: 10px;
+  top: 14px;
 }
 
 .button-minus {
   left: 14px;
-  top: 10px;
+  top: 14px;
 }
 
 .modal-label {
