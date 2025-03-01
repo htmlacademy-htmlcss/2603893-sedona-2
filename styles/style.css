@@ -99,6 +99,12 @@ body {
     position: absolute;
 }
 
+.navigation-logo:hover,
+.navigation-logo:focus-visible,
+.navigation-logo:active {
+  opacity: 0.7;
+}
+
 .navigation-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -145,6 +151,13 @@ body {
     line-height: 24px;
     font-size: 20px;
     font-weight: 700;
+}
+
+.navigation-link:hover,
+.navigation-link:focus-visible,
+.navigation-link:active {
+  color: #615048;
+  opacity: 0.7;
 }
 
 .navigation-user-link-search {
@@ -752,8 +765,7 @@ body {
 }
 
 .breadcrumbs-item-home .breadcrumbs-link:focus-visible {
-  outline: none;
-  border: none;
+  outline: 1px solid #82B3D3;
 }
 
 .breadcrumbs-item-home .breadcrumbs-link:active {
@@ -1028,7 +1040,7 @@ body {
 .checkbox-checkmark {
   display: none;
   width: 20px;
-  height: 19px;
+  height: 20px;
   cursor: pointer;
   background-image: url('../images/catalog/tick.svg');
   background-repeat: no-repeat;
@@ -1047,18 +1059,17 @@ body {
   opacity: 0.6;
 }
 
-.control input:focus-visible + .custom-radio {
+.control-input-radio:focus-visible + .custom-radio {
   outline: 3px solid #83B3D3;
 }
 
-.control input:focus-visible + .custom-checkbox {
+.control-input-check:focus-visible + .custom-checkbox {
   outline: 3px solid #83B3D3;
 }
 
 .control:active {
   opacity: 0.3;
 }
-
 
 
 .control input:checked + .custom-checkbox .checkbox-checkmark {
@@ -1095,7 +1106,7 @@ select {
     position: relative;
     width: 292px;
     margin-left: auto;
-    padding: 12px 18px;
+    padding: 12px 34px 12px 18px;
     color: #333;
     font-size: 18px;
     line-height: 21px;
