@@ -197,9 +197,13 @@
           <form action="https://echo.htmlacademy.ru" class="modal-form">
             <fieldset class="modal-visit">
                 <label class="modal-label" for="in">Дата заезда:</label>
-                <input class="modal-input" id="in" type="text" placeholder="27 апреля 2020" required>
+                <div class="wrapper-label text valid">
+                  <input class="modal-input" id="in" type="text" placeholder="27 апреля 2020" required>
+                </div>
                 <label class="modal-label" for="out">Дата выезда:</label>
-                <input class="modal-input" id="out" type="text" placeholder="1 сентября 2023" required>
+                <div class="wrapper-label text invalid">
+                  <input class="modal-input" id="out" type="text" placeholder="1 сентября 2023" required>
+                </div>
             </fieldset>
             <fieldset class="modal-person">
               <div class="modal-adult">

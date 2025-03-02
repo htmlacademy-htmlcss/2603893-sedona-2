@@ -1366,6 +1366,9 @@ select {
 }
 
 .modal-label {
+  display: flex;
+  align-items: center;
+  position: relative;
   color: #000;
   font-size: 20px;
   font-weight: 700;
@@ -1381,6 +1384,7 @@ select {
   column-gap: 18px;
   margin-bottom: 48px;
 }
+
 
 .modal-person {
   display: grid;
@@ -1402,9 +1406,34 @@ select {
   column-gap: 46px;
 }
 
+.wrapper-label {
+  position: relative;
+}
+
+.text:after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.valid::after {
+  content: "Мы не можем отправить вас в прошлое.";
+  color: #ff5757;
+}
+
+.invalid::after {
+  content: "На эти даты есть свободные номера. Пока есть.";
+  color: #333333;
+}
+
 
 .modal-input {
-  padding: 12px 20px;
+  width: 100%;
+  padding: 12px 42px 12px 20px;
   border-radius: 4px;
   background-color:#F2F2F2;
   border: none;
@@ -1452,12 +1481,6 @@ select {
 
 .modal-input-small:hover {
   background-color:#F2F2F2;
-}
-
-.modal-label {
-  display: flex;
-  align-items: center;
-  position: relative;
 }
 
 .modal-button-search {
