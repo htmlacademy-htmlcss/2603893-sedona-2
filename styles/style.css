@@ -230,6 +230,10 @@ body {
     margin-left: 20px;
 }
 
+.navigation-logo-img {
+  width: 140px;
+  height: 70px;
+}
 
 .hero {
     background-color: rgba(131, 179, 211, 0.5);
