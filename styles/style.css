@@ -103,7 +103,7 @@ body {
     display: flex;
     margin-left: auto;
     list-style-type: none;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
 }
 
@@ -145,6 +145,18 @@ body {
   background-image: url('../images/index/heart.svg');
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+.navigation-user-link-search:hover,
+.navigation-user-link-search:focus-visible,
+.navigation-user-link-search:active {
+  opacity: 0.6;
+}
+
+.navigation-user-link-fav:hover,
+.navigation-user-link-fav:focus-visible,
+.navigation-user-link-fav:active {
+  opacity: 0.6;
 }
 
 
@@ -227,6 +239,7 @@ body {
 }
 
 .navigation-user-button {
+    margin-top: 14px;
     margin-left: 20px;
 }
 
@@ -243,6 +256,7 @@ body {
     background-position: left bottom, left top;
     min-height: 485px;
     margin: 0 auto;
+    padding: 51px 0 82px 0;
 }
 
 
@@ -250,7 +264,6 @@ body {
 .promo-welcome {
     display: block;
     margin: 0 auto;
-    padding-top: 51px;
     width: 458px;
     min-height: 352px;
 }
@@ -306,6 +319,26 @@ body {
     background-color: #82B3D3;
 }
 
+.advantages-item:nth-child(5n + 1) .advantages-block {
+  background-color: #82B3D3; /* 1, 6, 11... - голубой */
+}
+
+.advantages-item:nth-child(5n + 2) .advantages-block {
+  background-color: rgba(131, 179, 211, 0.20);/* 2, 7, 12... - синий */
+}
+
+.advantages-item:nth-child(5n + 3) .advantages-block {
+  background-color: rgba(131, 179, 211, 0.12); /* 3, 8, 13... - белый */
+}
+
+.advantages-item:nth-child(5n + 4) .advantages-block {
+  background-color: rgba(131, 179, 211, 0.20); /* 4, 9, 14... - синий */
+}
+
+.advantages-item:nth-child(5n + 5) .advantages-block {
+  background-color: #82B3D3; /* 5, 10, 15... - голубой */
+}
+
 .advantages-block:before {
   content: '';
   position: absolute;
@@ -317,8 +350,7 @@ body {
 }
 
 .advantages-block-light {
-    background-color: rgba(131, 179, 211, 0.12);
-    padding: 114px 85px;
+    padding: 112.5px 85px;
 }
 
 .advantages-block-light:before {
@@ -332,8 +364,7 @@ body {
 }
 
 .advantages-block-medium {
-   background-color: rgba(131, 179, 211, 0.20);
-   padding: 114px 85px;
+   padding: 112.5px 85px;
 }
 
 .advantages-block-medium:before {
@@ -427,9 +458,13 @@ body {
     content: url('../images/index/presents.svg');
 }
 
-.service-item-medium {
-    background-color: rgba(131, 179, 211, 0.12);
+.service-item:nth-child(3n+1) {
+  background-color: rgba(131, 179, 211, 0.12);
 }
+.service-item:nth-child(3n+3) {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
 
 .service-title {
     font-size: 24px;
@@ -826,6 +861,10 @@ body {
   cursor: pointer;
 }
 
+.range-button:hover {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+}
+
 .range-button:focus-visible {
   outline: 3px solid #83B3D3;
 }
@@ -960,7 +999,7 @@ body {
   outline: 3px solid #83B3D3;
 }
 
-.control-input-check:focus-visible + .custom-checkbox {
+.control-input-checkbox:focus-visible + .custom-checkbox {
   outline: 3px solid #83B3D3;
 }
 
